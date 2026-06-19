@@ -1,0 +1,131 @@
+.guests-page {
+  padding: 120px 40px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.guest-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.guest-header h1 {
+  font-size: 42px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.guest-header p {
+  color: #64748b;
+  font-size: 18px;
+}
+
+.guest-form {
+  background: white;
+
+  max-width: 700px;
+  margin: auto;
+
+  display: flex;
+  gap: 15px;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
+
+.guest-form input {
+  flex: 1;
+
+  padding: 15px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+}
+
+.guest-form button {
+  background: #c59d5f;
+
+  color: white;
+
+  border: none;
+
+  padding: 15px 25px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.guest-table-container {
+  margin-top: 40px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
+
+.guest-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.guest-table th {
+  background: #1f2937;
+  color: white;
+  padding: 18px;
+  text-align: left;
+}
+
+.guest-table td {
+  padding: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.guest-table tr:hover {
+  background: #f8fafc;
+}
+
+.delete-btn {
+  background: #ef4444;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 768px) {
+
+  .guest-form {
+    flex-direction: column;
+  }
+
+  .guest-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+}

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 90vh;
+
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+}
+
+.welcome-tag {
+  background: #c59d5f;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 72px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-primary {
+  background: #c59d5f;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 35px;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.stats-section {
+  max-width: 1200px;
+
+  margin: -80px auto 60px;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 25px;
+
+  padding: 20px;
+}
+
+.card {
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h2 {
+  font-size: 42px;
+  color: #c59d5f;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 18px;
+}
+
+.about-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
