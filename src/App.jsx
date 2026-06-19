@@ -10,9 +10,9 @@ import Guests from "./pages/Guests";
 import Bookings from "./pages/Bookings";
 import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
-import Overview from "./dashboard/Overview";
-import Revenue from "./dashboard/Revenue";
-import Occupancy from "./dashboard/Occupancy";
+import Overview from "./Dashboard/Overview";
+import Revenue from "./Dashboard/Revenue";
+import Occupancy from "./Dashboard/Occupancy";
 
 console.log(Overview);
 console.log(Revenue);
